@@ -20,7 +20,7 @@ public class PrimitiveData {
         double height = 1.75;
         char initialLetter = 'A';
         boolean isDeadOrAlive = true;
-        Long bankBalance = 100_000_000L;
+        long bankBalance = 100_000_000L;
 
         System.out.println("Age: " + age);
         System.out.println("Height: " + height);
