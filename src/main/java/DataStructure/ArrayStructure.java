@@ -21,5 +21,7 @@ public class ArrayStructure {
     for (String s : names) {
       System.out.println(s);
     }
+
+    // Quando faz rescrita de um array, ele não cria um novo array, ele apaga os valores antigos
   }
 }
