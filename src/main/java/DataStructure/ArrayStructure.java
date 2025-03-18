@@ -1,5 +1,7 @@
 package DataStructure;
 
+import java.util.Arrays;
+
 public class ArrayStructure {
 
   public static void main(String[] args) {
@@ -12,6 +14,8 @@ public class ArrayStructure {
     names[2] = "Baz";
     names[3] = "Qux";
     names[4] = "Quux";
+
+    System.out.println(Arrays.toString(names));
 
     // Print the array
     for (int i = 0; i < names.length; i++) {
