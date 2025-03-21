@@ -10,13 +10,20 @@ public class Main {
     person.age = 30;
     person.birthday = LocalDate.of(1990, 1, 1);
 
-    String displayAge = person.displayAge();
-    int calculatedAge = person.calculateAge();
-
-    System.out.println("Name: " + person.name);
-    System.out.println(displayAge);
-    System.out.println("Birthday: " + person.birthday + " (Calculated age: " + calculatedAge + ")");
+    Role admin = new Role();
+    admin.name = "Jane";
+    admin.age = 25;
+    admin.birthday = LocalDate.of(1995, 1, 1);
+    admin.nameRole = "Admin";
 
     person.sayHello();
+    System.out.println(person.displayAge());
+    System.out.println(person.calculateAge());
+
+    admin.sayHello();
+    System.out.println(admin.displayAge());
+    System.out.println(admin.calculateAge());
+    admin.sayRole();
+
   }
 }
