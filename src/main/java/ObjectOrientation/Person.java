@@ -2,23 +2,16 @@ package ObjectOrientation;
 
 import java.time.LocalDate;
 
-public class Person {
-  String name;
-  int age;
-  LocalDate birthday;
+public abstract class Person {
+  protected String name;
+  protected int age;
+  protected LocalDate birthday;
 
   public void sayHello() {
     System.out.println("Hello, my name is " + name);
   }
 
-  public String displayAge() {
-    return "I am " + age + " years old";
-  }
+  public abstract String displayAge();
 
-  public int calculateAge() {
-    LocalDate currentDate = LocalDate.now();
-    int currentYear = currentDate.getYear();
-    int birthYear = birthday.getYear();
-    return currentYear - birthYear;
-  }
+  public abstract int calculateAge();
 }
